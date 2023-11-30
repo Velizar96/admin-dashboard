@@ -65,3 +65,43 @@ body {
     "sidebar header"
     "sidebar content";
 }
+
+/* --- --- --- --- --- SIDEBAR --- --- --- --- --- --- */
+.sidebar {
+  background-color: var(--primary);
+  color: var(--gray-1);
+  padding: 2rem;
+  grid-area: sidebar;
+}
+
+.sidebar-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.75rem;
+}
+
+.sidebar-title > [class^="material-icons"] {
+  font-size: 1.4em;
+  margin-right: 0.25em;
+}
+
+.nav {
+  font-size: 1.2rem;
+  margin-top: 3.25rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.nav-item.current {
+  font-weight: 900;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.nav-link > [class^="material-icons"] {
+  font-size: 1.5em;
+}
