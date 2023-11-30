@@ -105,3 +105,114 @@ body {
 .nav-link > [class^="material-icons"] {
   font-size: 1.5em;
 }
+
+/* --- --- --- --- --- HEADER --- --- --- --- --- --- */
+.header {
+  background-color: var(--gray-1);
+  grid-area: header;
+  padding: 1.5rem 3rem;
+  box-shadow: var(--shadow-lg);
+  z-index: 3;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr max-content;
+  margin-bottom: 2.5rem;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  margin-right: auto;
+  width: 100%;
+}
+
+.search label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.search-icon {
+  font-size: 1.8rem;
+}
+
+.search > #search {
+  display: inline-block;
+  border: 0;
+  background-color: var(--gray-2);
+  padding: 0.75em 2em;
+  outline-color: var(--primary);
+  margin-left: 1.25rem;
+  border-radius: 99em;
+  width: min(80%, 700px);
+}
+
+.header .account {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.account button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picture {
+  background: var(--avatar1) center center / cover no-repeat;
+  border-radius: 50%;
+}
+
+.account .picture {
+  margin: 0 1rem 0 2.5rem;
+  height: 40px;
+  width: 40px;
+}
+
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.profile .picture {
+  width: 75px;
+  height: 75px;
+}
+
+.profile .greeting {
+  font-weight: 800;
+  margin-bottom: 0.4rem;
+}
+
+.profile .name {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 2rem;
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--gray-1);
+  font-weight: 500;
+  padding: 0.75em 2.3em;
+  border-radius: 99em;
+}
